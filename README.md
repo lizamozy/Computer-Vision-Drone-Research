@@ -1,4 +1,4 @@
-# Computer-Vision-Drone-Research
+# Computer Vision Drone Research
 
 ## Overview
 **Complete the PX4 steps before running any of the programs below**
@@ -15,6 +15,7 @@
 - Build PX4 SITL at least once:
 * `cd ~/PX4-Autopilot`
 * `make px4_sitl`
+  
 ### 2. Start Drone 1 (rear drone, instance 1)
 Open Terminal 1:
 * `cd ~/PX4-Autopilot`
@@ -23,6 +24,7 @@ Open Terminal 1:
 * Wait for the pxh> prompt, then in that shell:
 * `param set NAV_DLL_ACT 0`
 This starts Gazebo Gz with the default world and spawns model x500_depth_1.
+
 ### 3. Start Drone 2 (front drone, instance 2)
 Open Terminal 2:
 * `cd ~/PX4-Autopilot`
@@ -34,7 +36,7 @@ PX4_GZ_MODEL_POSE="3,0" \
 * Now the world contains two drones: x500_depth_1 at the origin and
 x500_depth_2 about 3 m in front along the +X axis.
 
-### 4. Camera Topics 
+### 4. Bridging Topics
 - Each drone publishes its RGB camera over Gz topics, for example:
 `/world/default/model/x500_depth_1/link/camera_link/sensor/IMX214/image`
 `/world/default/model/x500_depth_2/link/camera_link/sensor/IMX214/image`
@@ -46,6 +48,6 @@ x500_depth_2 about 3 m in front along the +X axis.
 ### 5. Visualize the camera feed in another fresh terminal using `rqt_image_view` or `RViz2`.
 * may need to manually select the correct topic in the gui if jsut seeing grey gradient/ blank screen
 
-### Then run any of the python scripts in the repo after all of these steps are completed
+### 6. Run any of the python scripts in the repo after all of these steps are completed
 * do not run more than one program at once as MAVSDK can get confused on ports being busy
-*** To run `reported_position.py` user needs to create additional ros bridge to gather the gazebo world GPS data and run this bridge in another seperate terminal **
+* To run `reported_position.py` user needs to create additional ros bridge to gather the gazebo world GPS data and run this bridge in another seperate terminal 
