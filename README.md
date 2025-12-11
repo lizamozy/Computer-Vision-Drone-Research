@@ -12,9 +12,9 @@
 - Ubuntu 22.04 with PX4-Autopilot cloned.
 - Gazebo Gz (Harmonic) installed via PX4 setup script.
 - ROS 2 Humble (for camera feed) and ros_gz_bridge installed.
-Build PX4 SITL at least once:
-*`cd ~/PX4-Autopilot`
-*`make px4_sitl`
+- Build PX4 SITL at least once:
+* `cd ~/PX4-Autopilot`
+* `make px4_sitl`
 ### 2. Start Drone 1 (rear drone, instance 1)
 Open Terminal 1:
 * `cd ~/PX4-Autopilot`
