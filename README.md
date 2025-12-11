@@ -2,10 +2,10 @@
 
 ## Overview
 **Complete the PX4 steps before running any of the programs below**
-* simple.py: Sanity Script to make sure that two drones can fly at once in one Gazebo simluation
-* sqaure_mission: Script to fly two drones in a square mission
-* reported_position.py: Script to get the PX4 Position and Gazebo position of the leader drone, flys them in a sqaure mission, and outputs a graph to show the difference between the two positions
-* drone_vision.py: Script to calculate estimated position of leader drone from camera footage from the follower drone
+* `simple.py`: Sanity Script to make sure that two drones can fly at once in one Gazebo simluation
+* `sqaure_mission.py`: Script to fly two drones in a square mission
+* `reported_position.py`: Script to get the PX4 Position and Gazebo position of the leader drone, flys them in a sqaure mission, and outputs a graph to show the difference between the two positions
+* `drone_vision.py`: Script to calculate estimated position of leader drone from camera footage from the follower drone
 
 ## Two PX4 x500_depth Drones in One Gazebo Gz World – Quick Steps
 ### 1. Prerequisites (done once)
